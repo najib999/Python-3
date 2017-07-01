@@ -6,6 +6,10 @@ Created on Fri Jun 30 20:55:09 2017
 """
 
 def flatten(aList):
+    ''' 
+    aList: a list 
+    Returns a copy of aList, which is a flattened version of aList 
+    '''
     ls = []
     def interior(aList):
         for i in aList:
