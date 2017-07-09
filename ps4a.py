@@ -165,7 +165,7 @@ def isValidWord(word, hand, wordList):
     wordList: list of lowercase strings
     """
     ls = list(dispHand(hand))
-    if word in wordList:
+    if word in wordList[0]:
         for i in word:
             if i in ls:
                 ls.remove(i)
