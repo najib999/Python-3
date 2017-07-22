@@ -23,19 +23,19 @@ def compChooseWord(hand, wordList, n):
 
     returns: string or None
     """
-    # Create a new variable to store the maximum score seen so far (initially 0)
+    # A new variable to store the maximum score seen so far (initially 0)
     bestScore = 0
-    # Create a new variable to store the best word seen so far (initially None)  
+    # A new variable to store the best word seen so far (initially None)  
     bestWord = None
     # For each word in the wordList
     for word in wordList:
-        # If you can construct the word from your hand
+        # Construct the word from your hand
         if isValidWord(word, hand, wordList):
-            # find out how much making that word is worth
+            # how much making that word is worth
             score = getWordScore(word, n)
-            # If the score for that word is higher than your best score
+            # If the score for that word is higher than best score
             if (score > bestScore):
-                # update your best score, and best word accordingly
+                # updates best score, and best word accordingly
                 bestScore = score
                 bestWord = word
     # return the best word you found.
@@ -97,7 +97,6 @@ def compPlayHand(hand, wordList, n):
 
     
 #
-# Problem #6: Playing a game
 #
 #
 def playGame(wordList):
